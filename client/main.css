@@ -18,6 +18,24 @@ body {
   background-color: #E4CE69;
 }
 
+.button {
+  background-color: #4BA5B0;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hoover {
+  background-color: #8FBC8F;
+  color: #4CAF50;
+}
+
 a{
 	/*display:block;*/
 	background-color: #4BA5B0;
@@ -41,8 +59,8 @@ a:visited {
 }
 
 a:hover {
-  background-color: #E0A44E;
-  color: gray;
+  background-color: #E06FDD;
+  color: #604A1C;
 }
 
 /* selected link */
@@ -53,25 +71,8 @@ a:active {
 
 h1{
 	text-align: left;
-	color: #96B072;
-}
-
-.button {
-  background-color: #4BA5B0;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button:hoover {
-  background-color: #8FBC8F;
-  color: #4CAF50;
+	color: #E0A44E;
+  /*4BA5B0*/
 }
 
 img {
@@ -79,12 +80,17 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  border: 10px solid #96B072;
 }
 
-.fling-minislide {width:80%; height:0px; padding-bottom: 50%; overflow:hidden; position:relative; }
-.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+.fling-minislide {width:40%; height:0px; padding-bottom: 50%; overflow:visible; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 35s infinite; opacity:0; width: 100%; height: auto;}
 
-@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
-.fling-minislide img:nth-child(4){animation-delay:0s;}
-.fling-minislide img:nth-child(3){animation-delay:5s;}
-.fling-minislide img:nth-child(2){animation-delay:10s;}
+@keyframes fling-minislide {10%{opacity:1;} 20%{opacity:0;}}
+.fling-minislide img:nth-child(7){animation-delay:0s;}
+.fling-minislide img:nth-child(6){animation-delay:5s;}
+.fling-minislide img:nth-child(5){animation-delay:10s;}
+.fling-minislide img:nth-child(4){animation-delay:15s;}
+.fling-minislide img:nth-child(3){animation-delay:20s;}
+.fling-minislide img:nth-child(2){animation-delay:25s;}
+.fling-minislide img:nth-child(1){animation-delay:30s;}
